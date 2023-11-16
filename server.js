@@ -1,4 +1,3 @@
-// Replace this block of code
 const express = require('express');
 const { Octokit } = require('@octokit/core');
 const cors = require('cors'); 
@@ -13,9 +12,6 @@ app.use(express.static('public'));
 const octokit = new Octokit({
   auth: process.env.ACCESS_TOKEN,
 });
-
-// ... rest of your code ...
-
 
 const owner = process.env.OWNER;
 const repo = process.env.REPO;
